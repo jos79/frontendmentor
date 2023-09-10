@@ -1,0 +1,94 @@
+:root {
+    --gr1-light-slate-blue: hsl(252, 100%, 67%);    
+    --gr1-light-royal-blue: hsl(241, 81%, 54%);     
+
+    --gr2-violet-blue: hsla(256, 72%, 46%, 1);
+    --gr2-persian-blue: hsla(241, 72%, 46%, 0);
+    
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --light-lavender-tr: hsla(241, 100%, 89%, 0.5);
+    --light-lavender-tr2: hsla(241, 100%, 89%, 0.7);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+@font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); } 
+
+@font-face {
+    font-family: Hanken;
+    src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+@font-face {
+    font-family: Hanken_Bold;
+    src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+@font-face {
+    font-family: Hanken_Extra_Bold;
+    src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+
+body {
+    margin: 0 auto;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--gr1-light-royal-blue);
+    background: linear-gradient(0deg, var(--gr1-light-royal-blue), var(--gr1-light-slate-blue));
+
+    border-radius: 0 0 30px 30px;
+}
+
+.pre-tittle {
+    font-family: Hanken;
+    font-size: 18px;
+    color: var(--light-lavender);
+    padding: 10px 0;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--gr2-violet-blue);
+    background: linear-gradient(0deg, var(--gr2-persian-blue), var(--gr2-violet-blue));
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+}
+
+.circle span:nth-child(1) {
+    font-family: Hanken_Extra_Bold;
+    font-size: 52px;
+    color: var(--pale-blue);
+}
+
+.circle span:nth-child(2) {
+    font-family: Hanken;
+    font-size: 14px;
+    color: var(--light-lavender-tr);
+}
+
+.title {
+    font-family: Hanken;
+    font-size: 24px;
+    color: var(--light-lavender);
+    margin: 0;
+    padding: 25px 0 0 0;
+}
+
+.post-title {
+    font-family: Hanken;
+    font-size: 16px;
+    color: var(--light-lavender-tr2);
+    margin: 0;
+    width: 280px;
+    padding: 10px 0 40px 0;
+}
