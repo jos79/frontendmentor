@@ -1,0 +1,54 @@
+:root {
+    --gradient: linear-gradient(90deg, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+
+    font-size: 14px;
+}
+
+body {
+    background: url('./images/bg-mobile.png') var(--dark-blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0px;
+    padding: 0 1.7rem;
+    box-sizing: border-box;
+}
+
+.section-links {
+    background-color: var(--dark-blue);
+    padding: 3rem;
+    border-radius: 0 120px 0 0 ;
+}
+
+.links-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+}
+
+.links-list li {
+    list-style: none;
+}
+
+.links-list button {
+    background-color: var(--very-dark-blue);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.section-links img {
+    width: fit-content;
+}
